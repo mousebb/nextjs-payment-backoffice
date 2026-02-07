@@ -1,0 +1,128 @@
+{
+  "Common": {
+    "loading": "加载中..."
+  },
+
+  "Login": {
+    "login": "登录",
+    "username": "用户名",
+    "password": "密码",
+    "remember-me": "记住我",
+    "forgot-password": "忘记密码?"
+  },
+
+  "Sidebar": {
+    "dashboard": "仪表盘",
+    "merchants": "商户",
+    "merchant-list": "商户列表",
+    "merchant-accounts": "商户账户",
+    "account-transactions": "账户交易",
+    "banks": "银行",
+    "rules": "规则",
+    "rule-list": "规则列表",
+    "transaction-rules": "交易规则",
+    "routers": "路由",
+    "router-list": "路由",
+    "gateways": "网关",
+    "gateway-list": "网关列表",
+    "gateway-status-codes": "网关状态码",
+    "transactions": "交易",
+    "payment-list": "支付列表",
+    "refund-list": "退款列表",
+    "withdrawal-list": "提现列表",
+    "chargeback-list": "拒付列表",
+    "settings": "设置",
+    "roles": "角色",
+    "permissions": "权限",
+    "users": "用户",
+    "access-logs": "访问日志",
+    "currencies": "货币",
+    "status-codes": "状态码",
+    "transaction-methods": "支付方式",
+    "settlement-methods": "结算方式",
+    "notifications": "通知",
+    "logout": "退出",
+    "statements": "对账单",
+    "statements-daily": "每日",
+    "statements-monthly": "每月",
+    "statements-income": "收入",
+    "commission": "佣金",
+    "commission-logs": "佣金记录",
+    "settlement": "结算"
+  },
+
+  "TabBar": {
+    "payment": "支付",
+    "merchant": "商户",
+    "withdrawal": "提现"
+  },
+
+  "TransactionSourceType": {
+    "payment": "支付",
+    "refund": "退款",
+    "withdrawal": "提现",
+    "fee": "手续费",
+    "chargeback": "拒付",
+    "release": "释放",
+    "reserve": "预留",
+    "adjustment": "调整"
+  },
+
+  "AdjustmentType": {
+    "release": "释放",
+    "reserve": "预留",
+    "adjustment": "调整"
+  },
+
+  "TargetType": {
+    "merchant": "商户",
+    "bank": "银行"
+  },
+
+  "TransactionType": {
+    "payment": "支付",
+    "refund": "退款",
+    "withdrawal": "提现",
+    "chargeback": "拒付"
+  },
+
+  "ClientErrorMessages": {
+    "login-failed": "登录失败"
+  },
+
+  "ServerErrorMessages": {
+    "invalid-credentials": "无效的用户名或密码"
+  },
+
+  "TransactionLogMethod": {
+    "CREATE_SIGNED_API": "创建签名请求",
+    "SUBMIT_TO_PSP": "提交到 PSP",
+    "PSP_CALLBACK": "PSP 回调接收",
+    "PSP_RETURN": "从 PSP 返回",
+    "MERCHANT_CALLBACK": "回调到商户",
+    "MERCHANT_RETURN": "页面返回商户",
+    "PAYMENT_PAGE_REDIRECT_OUT": "支付页面重定向",
+    "SUBMISSION_RESULT": "提交结果"
+  },
+
+  "SearchModal": {
+    "searchResult": "搜索结果",
+    "notFoundPayment": "没有找到该 payment",
+    "notFoundRefund": "没有找到该 refund",
+    "notFoundWithdrawal": "没有找到该 withdrawal",
+    "notFoundAccountTransaction": "没有找到该 account transaction 或类型不是 payment",
+    "searching": "正在查找..."
+  },
+
+  "TransactionStatus": {
+    "pending": "待处理",
+    "success": "成功",
+    "failed": "失败",
+    "cancelled": "已取消",
+    "processing": "处理中",
+    "expired": "已过期",
+    "refunded": "已退款",
+    "submitted": "已提交",
+    "unknown": "未知"
+  }
+}

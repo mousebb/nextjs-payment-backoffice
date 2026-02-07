@@ -1,0 +1,245 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Geist';
+  src: url('./fonts/Geist-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GeistMono';
+  src: url('./fonts/GeistMono-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --font-geist-sans: 'Geist', sans-serif;
+  --font-geist-mono: 'GeistMono', monospace;
+}
+
+/* Default light mode via :root */
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* System preference for dark mode (fallback) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* Class-based dark mode (takes precedence) */
+html.dark {
+  --background: #111827; /* Tailwind gray-900 */
+  --foreground: #f3f4f6; /* Tailwind gray-100 */
+}
+
+html.dark body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+/* NO @theme inline for this test */
+
+/* NO .test-dark-text specific rules, it should inherit from body */
+/* Ensure any previous .test-dark-text rules are removed or commented out */
+html.dark .test-dark-text {
+  /* This rule should be removed or empty to test body inheritance */
+}
+
+/* === ToastNotify 自定义色调 === */
+.Toastify__toast--success {
+  background-color: #dcfce7 !important; /* Tailwind bg-green-100 */
+  color: #16a34a !important; /* Tailwind text-green-600 */
+}
+.Toastify__toast--warning {
+  background-color: #fef9c3 !important; /* Tailwind bg-yellow-100 */
+  color: #ca8a04 !important; /* Tailwind text-yellow-600 */
+}
+.Toastify__toast--error {
+  background-color: #fee2e2 !important; /* Tailwind bg-red-100 */
+  color: #dc2626 !important; /* Tailwind text-red-600 */
+}
+.Toastify__toast--info {
+  background-color: #e0f2fe !important; /* Tailwind bg-sky-100 */
+  color: #0284c7 !important; /* Tailwind text-sky-600 */
+}
+
+.Toastify__toast {
+  min-height: 42px !important; /* 默认48px */
+  padding-top: 8px !important;
+  padding-bottom: 10px !important;
+  min-width: 0 !important;
+  width: 250px !important; /* 350px */
+  max-width: 80vw !important;
+}
+
+/* TODO: 深色模式下，ToastNotify 色调 暂时没有生效 */
+@media (prefers-color-scheme: dark) {
+  body .Toastify__toast--success {
+    background-color: #166534 !important; /* Tailwind bg-green-700 */
+    color: #bbf7d0 !important; /* Tailwind text-green-200 */
+  }
+  body .Toastify__toast--warning {
+    background-color: rgba(
+      161,
+      98,
+      7,
+      0.5
+    ) !important; /* Tailwind bg-yellow-700/50 */
+    color: #fde68a !important; /* Tailwind text-yellow-300 */
+  }
+  body .Toastify__toast--error {
+    background-color: #991b1b !important; /* Tailwind bg-red-700 */
+    color: #fee2e2 !important; /* Tailwind text-red-100 */
+  }
+  body .Toastify__toast--info {
+    background-color: #0c4a6e !important; /* Tailwind bg-sky-900 */
+    color: #bae6fd !important; /* Tailwind text-sky-200 */
+  }
+}
+/* === END ToastNotify 色调 === */
+/* 在你全局 CSS 中加入 */
+
+/* Replace Tailwind CSS Autofill bgcolor*/
+input:-webkit-autofill,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:hover,
+input:-internal-autofill-selected {
+  transition: background-color 9999s ease-out;
+  transition-delay: 9999s;
+}
+
+.scrollbar {
+  scrollbar-color: #cfcfcf transparent; /* Firefox 支持 */
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: white; /* 滑块颜色 */
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background-color: #ffffff; /* 轨道颜色 */
+}
+
+/* 可选：hover 变色 */
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #888;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE/Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Hide password reveal button in Edge */
+input[type='password']::-ms-reveal,
+input[type='password']::-ms-clear {
+  display: none;
+}
+
+.react-datepicker-popper {
+  z-index: 9999 !important;
+}
+
+.react-datepicker {
+  z-index: 9999 !important;
+  @apply text-sm rounded-md shadow-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-100 font-normal !important;
+}
+
+.react-datepicker__header {
+  @apply text-sm border-none text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-700 !important;
+}
+
+.react-datepicker__current-month,
+.react-datepicker-time__header {
+  @apply text-sm text-gray-700 dark:text-gray-300 !important;
+}
+
+.react-datepicker__day {
+  @apply inline-flex w-6 h-6 items-center justify-center text-sm text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-700 scrollbar !important;
+}
+
+.react-datepicker__time {
+  @apply text-sm text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-700 scrollbar !important;
+}
+
+.react-datepicker__day-name {
+  @apply font-semibold text-gray-700 dark:text-gray-300 !important;
+}
+
+.react-datepicker__day:hover {
+  @apply text-sm rounded-full text-sky-600 bg-sky-100 dark:text-sky-300 dark:bg-sky-600 !important;
+}
+
+.react-datepicker__day--today {
+  @apply text-sm rounded-full text-sky-600 dark:text-sky-300 bg-sky-100 dark:bg-sky-600 !important;
+}
+
+.react-datepicker__day--selected {
+  @apply text-sm rounded-full text-sky-100 dark:text-sky-700 bg-sky-600 dark:bg-sky-300 !important;
+}
+
+.react-datepicker__time-list-item:hover,
+.react-datepicker__time-list-item--selected {
+  @apply text-sm  text-sky-600 bg-sky-100 dark:text-sky-300 dark:bg-sky-600 !important;
+}
+
+.react-datepicker__triangle {
+  @apply hidden !important;
+}
+
+.react-datepicker__time-container {
+  @apply border-l-gray-200 dark:border-l-gray-600 !important;
+}
+
+.react-datepicker__month-text {
+  @apply w-[3.2rem] !important;
+}
+
+.react-datepicker__month-text--selected {
+  @apply text-sm rounded-full text-sky-100 dark:text-sky-700 bg-sky-600 dark:bg-sky-300 !important;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-15deg);
+  }
+  40% {
+    transform: rotate(15deg);
+  }
+  60% {
+    transform: rotate(-10deg);
+  }
+  80% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.shake-once {
+  display: inline-block;
+  animation: shake 0.6s ease-in-out 3;
+  transform-origin: center; /* 以中心点为旋转轴 */
+}

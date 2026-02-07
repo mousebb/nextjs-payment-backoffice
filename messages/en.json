@@ -1,0 +1,127 @@
+{
+  "Common": {
+    "loading": "Loading..."
+  },
+
+  "Login": {
+    "login": "Login",
+    "username": "Username",
+    "password": "Password",
+    "remember-me": "Remember Me",
+    "forgot-password": "Forgot Password?"
+  },
+
+  "Sidebar": {
+    "dashboard": "Dashboard",
+    "merchants": "Merchants",
+    "merchant-list": "Merchant List",
+    "merchant-accounts": "Merchant Accounts",
+    "account-transactions": "Account Transactions",
+    "banks": "Banks",
+    "rules": "Rules",
+    "rule-list": "Rule List",
+    "transaction-rules": "Transaction Rules",
+    "routers": "Routers",
+    "gateways": "Gateways",
+    "gateway-list": "Gateway List",
+    "gateway-status-codes": "Gateway Status Codes",
+    "transactions": "Transactions",
+    "payment-list": "Payment List",
+    "refund-list": "Refund List",
+    "withdrawal-list": "Withdrawal List",
+    "chargeback-list": "Chargeback List",
+    "settings": "Settings",
+    "roles": "Roles",
+    "permissions": "Permissions",
+    "users": "Users",
+    "access-logs": "Access Logs",
+    "currencies": "Currencies",
+    "status-codes": "Status Codes",
+    "transaction-methods": "Transaction Methods",
+    "settlement-methods": "Settlement Methods",
+    "notifications": "Notifications",
+    "logout": "Logout",
+    "statements": "Statements",
+    "statements-daily": "Daily",
+    "statements-monthly": "Monthly",
+    "statements-income": "Income",
+    "commission": "Commission",
+    "commission-logs": "Commission Logs",
+    "settlement": "Settlement"
+  },
+
+  "TabBar": {
+    "payment": "Payment",
+    "merchant": "Merchant",
+    "withdrawal": "Withdrawal"
+  },
+
+  "TransactionSourceType": {
+    "payment": "Payment",
+    "refund": "Refund",
+    "withdrawal": "Withdrawal",
+    "fee": "Fee",
+    "chargeback": "Chargeback",
+    "release": "Release",
+    "reserve": "Reserve",
+    "adjustment": "Adjustment"
+  },
+
+  "AdjustmentType": {
+    "release": "Release",
+    "reserve": "Reserve",
+    "adjustment": "Adjustment"
+  },
+
+  "TargetType": {
+    "merchant": "Merchant",
+    "bank": "Bank"
+  },
+
+  "TransactionType": {
+    "payment": "Payment",
+    "refund": "Refund",
+    "withdrawal": "Withdrawal",
+    "chargeback": "Chargeback"
+  },
+
+  "ClientErrorMessages": {
+    "login-failed": "Login failed"
+  },
+
+  "ServerErrorMessages": {
+    "invalid-credentials": "Invalid credentials"
+  },
+
+  "TransactionLogMethod": {
+    "CREATE_SIGNED_API": "Signed Request Created",
+    "SUBMIT_TO_PSP": "Submitted to PSP",
+    "PSP_CALLBACK": "PSP Callback Received",
+    "PSP_RETURN": "Returned from PSP",
+    "MERCHANT_CALLBACK": "Callback to Merchant",
+    "MERCHANT_RETURN": "Page Returned to Merchant",
+    "PAYMENT_PAGE_REDIRECT_OUT": "Payment Page Redirect",
+    "SUBMISSION_RESULT": "Submission Result"
+  },
+
+  "SearchModal": {
+    "searchResult": "Search Result",
+    "notFoundPayment": "No payment found",
+    "notFoundRefund": "No refund found",
+    "notFoundWithdrawal": "No withdrawal found",
+    "notFoundAccountTransaction": "No account transaction found or type is not payment",
+    "searching": "Searching..."
+  },
+
+  "TransactionStatus": {
+    "pending": "Pending",
+    "success": "Success",
+    "failed": "Failed",
+    "cancelled": "Cancelled",
+    "processing": "Processing",
+    "expired": "Expired",
+    "refunded": "Refunded",
+    "submitted": "Submitted",
+    "unknown": "Unknown"
+  }
+}

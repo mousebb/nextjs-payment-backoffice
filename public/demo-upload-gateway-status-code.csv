@@ -1,0 +1,4 @@
+status code; internal status code; description
+test-gateway-status-code-pending;pending;test pending description
+test-gateway-status-code-success;success;test success description
+test-gateway-status-code-failed;failed;test failed description
