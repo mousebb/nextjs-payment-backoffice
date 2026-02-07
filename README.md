@@ -209,10 +209,14 @@ This project is independently developed and maintained.
 
 You can support ongoing development via:
 
-**TRON (TRX / TRC20)**
+![TRON QR Code](assets/donate/trx.png)
+
 `TRysLsvUqTUAyZN2pLMJjW95pYTNkGvrzM`
 
 **Ethereum (ETH / ERC20)**
+
+![Ethereum QR Code](assets/donate/eth.png)
+
 `0x0e6C46f49F4c3Bd90a855Ce18396Ee9666003146`
 
 Thank you for supporting open infrastructure.
